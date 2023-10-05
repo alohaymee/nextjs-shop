@@ -1,0 +1,59 @@
+@mixin body14M() {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+@mixin body16M() {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+@mixin body18M() {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+@mixin body20B() {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+@mixin btn14M() {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  color: #0057FF;
+}
+
+@mixin btn16B() {
+  color: var(--primary-black-color-chips-500, #131A25);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+@mixin btn16M() {
+  color: var(--rectangle-2011-gary-500, #8A8787);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+@mixin btn20B() {
+  color: var(--rectangle-2011-gray-700, #4D4949);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}

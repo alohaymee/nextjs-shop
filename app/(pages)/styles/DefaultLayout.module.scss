@@ -1,0 +1,65 @@
+@use 'mixins';
+.wrapperBox {
+  min-width: 1280px;
+}
+
+.headerBox {
+  display: flex;
+  width: 1220px;
+  margin: 0 auto;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+  .navBox {
+    width: 512px;
+    display: flex;
+    justify-content: space-between;
+    @include mixins.btn20B;
+  }
+  .loginBox {
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include mixins.btn16M;
+  }
+}
+
+.footerBox {
+  padding: 40px 0 67px;
+
+  background-color: #F4F4F4;
+
+  .footerContentBox {
+    width: 1220px;
+    margin: 0 auto;
+
+    .sitemapBox {
+      padding-bottom: 36px;
+
+      a {
+        @include mixins.btn16B;
+      }
+    }
+
+    .cropBox {
+      padding-top: 36px;
+      border-top: 1px solid #CACACA;
+
+      h4 {
+        @include mixins.body16M;
+      }
+
+      p {
+        @include mixins.body14M;
+        margin-top: 10px;
+        margin-bottom: 8px;
+
+        a {
+          @include mixins.btn14M;
+        }
+      }
+    }
+  }
+
+}

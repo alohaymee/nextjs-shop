@@ -1,0 +1,132 @@
+@use 'mixins';
+
+.topBannerBox {
+  background: url('https://jejufriend.s3.ap-northeast-2.amazonaws.com/temporary/banner-sample-01.png') no-repeat 50%;
+  background-size: cover;
+  height: 474px;
+
+  .topBannerContentBox {
+    width: 1220px;
+    height: 474px;
+    margin: 0 auto;
+    padding-top: 114px;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      color: #FFF;
+      font-size: 44px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 60px;
+      margin-bottom: 12px;
+    }
+
+    span {
+      color: #FFF;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      margin-bottom: 40px;
+    }
+
+    .bannerDetailBtn {
+      width: 148px;
+      height: 48px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.80);
+      border: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 8px 0 14px;
+      span {
+        color: #059186;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.searchWrapper {
+  width: 1220px;
+  margin: 0 auto;
+  height: 382px;
+  h3 {
+    margin-top: 80px;
+    color: #251313;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+  }
+  .searchBox {
+    width: 1220px;
+    height: 158px;
+    margin-top: 28px;
+    display: flex;
+
+    .filterBox {
+      display: flex;
+      justify-content: space-between;
+      padding: 28px 24px;
+      width: 1054px;
+      border-radius: 14px 0px 0px 14px;
+      border: 1px solid var(--Border, #E9E9E9);
+      background: #FFF;
+      .dateFilterBox {
+        width: 528px;
+      }
+      .carFilterBox {
+        width: 215px;
+      }
+      .insuranceFilterBox {width: 215px;}
+      .textBox {
+        display: flex;
+        align-items: center;
+        margin-bottom: 18px;
+        span {
+          margin-left: 8px;
+          @include mixins.body18M;
+        }
+      }
+      .selectBox {
+        width: 215px;
+        padding: 18px;
+        border-radius: 10px;
+        border: 1px solid #E9E9E9;
+        background-color: #FBFBFB;
+        /* for Firefox */
+        -moz-appearance: none;
+        /* for Safari, Chrome, Opera */
+        -webkit-appearance: none;
+        @include mixins.body20B;
+      }
+    }
+    .searchBtnBox {
+      width: 166px;
+      border-radius: 0 14px 14px 0;
+      background: #4B4B4A;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      span {
+        color: var(--White, #FFF);
+        text-align: center;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px;
+        margin-top: 20px;
+      }
+
+    }
+  }
+
+}

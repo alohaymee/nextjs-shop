@@ -1,3 +1,25 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next",
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["prettier"],
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "import/order": [2, {"alphabetize":  {"order": "asc"}}],
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "all",
+        "endOfLine": "lf",
+        "semi": true,
+        "singleQuote": true,
+        "preintWidth": 120,
+        "tabWidth": 2
+      }
+    ]
+  }
 }
